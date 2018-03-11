@@ -1,5 +1,5 @@
 function palindrome(kata) {
-// you can only write your code here!
+
   if (kata === kata.split('').reverse().join('')) {
     return true;
   } else {
