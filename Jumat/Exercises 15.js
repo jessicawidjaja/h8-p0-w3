@@ -6,14 +6,14 @@ function groupAnimals(animals) {
   for(var i = 0; i < animals.length; i++){
     isiAnimals.push(animals[i])
     if(i < animals.length-1){
-      if(animals[i][0] !== animals[i+1][0]){
-        resultAnimals.push(isiAnimals)
-        isiAnimals = []
-      }
-    } else {
-      resultAnimals.push(isiAnimals)
-      isiAnimals = []
-    }
+    if(animals[i][0] !== animals[i+1][0]){
+     resultAnimals.push(isiAnimals)
+     isiAnimals = []
+  }
+  } else {
+     resultAnimals.push(isiAnimals)
+     isiAnimals = []
+  }
     
   }
 
